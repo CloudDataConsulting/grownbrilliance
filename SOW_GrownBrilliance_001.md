@@ -129,6 +129,7 @@ Given the exploratory nature of this work and the need for flexible resource all
 • Current Power BI reporting requirements and preferences  
 • Internal stakeholder availability for requirements clarification
 • Designated technical contact (Chris) for coordination
+• Support for outreach to Brian Walker regarding historical documentation access
 
 ## DELIVERABLES
 
@@ -163,10 +164,12 @@ Given the exploratory nature of this work and the need for flexible resource all
   - Integration potential with existing Grown Brilliance infrastructure
   - Recommendations for future data strategy development
 
-• **Knowledge Transfer Documentation**
-  - System architecture documentation
+• **Documentation Recovery and Knowledge Transfer**
+  - Outreach to Brian Walker to recover valuable Jira and Confluence documentation from Clean Origin project
+  - System architecture documentation (recovered and/or reconstructed)
   - Business rule and transformation logic documentation
   - Operational procedures and maintenance requirements
+  - Historical project documentation and implementation notes
 
 ## ADDITIONAL SERVICES: CONSULTING AND ADVISORY
 
@@ -201,6 +204,7 @@ Beyond the core deliverables, CDC will provide:
 - System access verification and credential setup
 - Initial data exploration and requirements validation
 - AWS account review and cost analysis initiation
+- Outreach to Brian Walker for Jira/Confluence documentation recovery
 - Stakeholder alignment and project planning finalization
 
 **Week 3-4: Data Extraction and Analysis**  
