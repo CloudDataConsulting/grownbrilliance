@@ -1,0 +1,301 @@
+<prompt>
+    <meta>
+        <purpose>
+            As an expert business analyst and technical writer specializing in Statement of Work (SOW) documentation, thoroughly analyze the meeting transcription provided in the MeetingTranscription section. Your task is to extract, synthesize, and structure all business-critical information into comprehensive markdown formatted documentation based on the SOWDocumentationStructure structure suitable for formal business agreements, project planning, and stakeholder alignment. Pay meticulous attention to detail, ensure specificity in all requirements, and maintain thoroughness in capturing every relevant aspect of the discussed work scope.
+        </purpose>
+        <instructions>
+            <instruction id="1">
+                Create an executive summary that clearly articulates the project's business purpose, strategic alignment, and anticipated value proposition with specific metrics or outcomes where mentioned.
+            </instruction>
+            <instruction id="2">
+                Identify and catalog all meeting participants with their full names, organizational roles, decision-making authority, and specific responsibilities or expertise areas mentioned during the meeting.
+            </instruction>
+            <instruction id="3">
+                Extract and comprehensively document the project scope, including explicit inclusions, exclusions, assumptions, constraints, and any boundary conditions discussed. Cite specific timestamps and speakers for each scope element.
+            </instruction>
+            <instruction id="4">
+                Systematically catalog all functional and non-functional requirements discussed, organizing them by priority, complexity, and interdependencies. Include performance criteria, compliance requirements, and quality standards where specified.
+            </instruction>
+            <instruction id="5">
+                Document deliverables with precise specifications, acceptance criteria, quality standards, and delivery timelines. Include format requirements, review processes, and approval workflows where discussed.
+            </instruction>
+            <instruction id="6">
+                Extract timeline information including project phases, milestones, dependencies, critical path items, and any scheduling constraints or preferred delivery dates mentioned.
+            </instruction>
+            <instruction id="7">
+                Identify resource requirements including personnel skills, technology needs, infrastructure requirements, budget considerations, and any third-party dependencies or vendor requirements discussed.
+            </instruction>
+            <instruction id="8">
+                Document risk factors, mitigation strategies, contingency plans, and any concerns or potential blockers identified by meeting participants.
+            </instruction>
+            <instruction id="9">
+                Catalog all decisions made, approvals given, and next steps assigned with responsible parties and deadlines where specified.
+            </instruction>
+            <instruction id="10">
+                Identify gaps, unresolved questions, and areas requiring additional clarification or follow-up meetings before SOW finalization.
+            </instruction>
+        </instructions>
+        <reasoning_guidance>
+            Think step-by-step through each section of the transcription. For each speaker's contribution, consider:
+            1. What specific business need or requirement are they expressing?
+            2. What level of detail and specificity have they provided?
+            3. Are there implicit requirements or assumptions that need to be made explicit?
+            4. How does this information relate to other requirements or constraints mentioned?
+            5. What questions or clarifications would a project manager or legal team need?
+            
+            When analyzing requirements, reason through:
+            - The difference between stated needs and underlying business objectives
+            - Technical feasibility and resource implications of each requirement
+            - Potential conflicts or dependencies between different requirements
+            - Missing information that would be critical for accurate scoping and pricing
+            
+            For timeline and resource analysis, consider:
+            - Realistic effort estimates based on the complexity described
+            - Resource availability and skill matching requirements
+            - Critical path dependencies and potential bottlenecks
+            - Buffer time needs for testing, reviews, and revisions
+        </reasoning_guidance>
+    </meta>
+
+    <reference>
+        <SOWBestPractices>
+            <Practice id="1">
+                <Title>Specific and Measurable Requirements</Title>
+                <Guidance>Transform vague statements into specific, measurable requirements with clear acceptance criteria.</Guidance>
+                <Example>
+                    <Vague>"Make the system faster"</Vague>
+                    <Specific>"Reduce page load time to under 2 seconds for 95% of requests under normal load conditions"</Specific>
+                </Example>
+            </Practice>
+            <Practice id="2">
+                <Title>Clear Scope Boundaries</Title>
+                <Guidance>Explicitly define what is included and excluded to prevent scope creep.</Guidance>
+                <Components>
+                    <InScope>Specific features, functions, and deliverables included</InScope>
+                    <OutOfScope>Explicitly excluded items to prevent misunderstandings</OutOfScope>
+                    <Assumptions>Dependencies and conditions assumed to be true</Assumptions>
+                </Components>
+            </Practice>
+            <Practice id="3">
+                <Title>Comprehensive Deliverables Definition</Title>
+                <Guidance>Each deliverable should have format, quality standards, and acceptance criteria.</Guidance>
+                <DeliverableTemplate>
+                    <Name>Specific deliverable name</Name>
+                    <Description>Detailed description of content and purpose</Description>
+                    <Format>File format, medium, or delivery method</Format>
+                    <AcceptanceCriteria>Specific criteria for client acceptance</AcceptanceCriteria>
+                    <Dependencies>Prerequisites or inputs required</Dependencies>
+                </DeliverableTemplate>
+            </Practice>
+            <Practice id="4">
+                <Title>Risk and Mitigation Documentation</Title>
+                <Guidance>Identify potential risks and document mitigation strategies.</Guidance>
+                <RiskCategories>
+                    <Technical>Technology limitations, integration challenges</Technical>
+                    <Schedule>Timeline constraints, resource availability</Schedule>
+                    <Business>Scope changes, stakeholder alignment</Business>
+                    <External>Third-party dependencies, regulatory changes</External>
+                </RiskCategories>
+            </Practice>
+        </SOWBestPractices>
+
+        <examples>
+            <SOWDocumentationStructure>
+                <![CDATA[
+# Statement of Work Documentation
+*Source: [Meeting Date] - [Meeting Title]*
+
+## Executive Summary
+### Project Overview
+- **Business Purpose:** [Clear statement of why this project exists]
+- **Strategic Alignment:** [How this supports business objectives]
+- **Expected Value:** [Quantified benefits and outcomes]
+- **Investment Level:** [Budget range or resource commitment discussed]
+
+### Key Success Metrics
+- [Specific, measurable outcomes that define project success]
+
+## Stakeholders & Participants
+### Decision Makers
+- **[Name]** - *[Title/Role]* - [Decision authority and key concerns]
+
+### Subject Matter Experts
+- **[Name]** - *[Title/Role]* - [Expertise area and contributions]
+
+### Project Team
+- **[Name]** - *[Title/Role]* - [Specific responsibilities discussed]
+
+## Project Scope Definition
+### Scope Inclusions
+#### Core Functionality
+- **[Requirement Category]**
+  - Requirement: [Specific requirement with timestamp citation]
+  - Priority: [High/Medium/Low with justification]
+  - Acceptance Criteria: [How success will be measured]
+
+#### Technical Requirements
+- **[Technical Category]**
+  - Requirement: [Detailed technical specification]
+  - Performance Standards: [Specific metrics and thresholds]
+  - Compliance Needs: [Regulatory or policy requirements]
+
+### Scope Exclusions
+- [Explicitly excluded items with reasoning - timestamp citations]
+
+### Assumptions
+- [Business, technical, or operational assumptions - with sources]
+
+### Constraints
+- [Budget, timeline, resource, or technical constraints identified]
+
+## Functional Requirements
+### [Requirement Category 1]
+#### [Specific Requirement]
+- **Description:** [Detailed requirement description]
+- **Business Justification:** [Why this is needed]
+- **Acceptance Criteria:** [Specific, testable conditions]
+- **Priority:** [High/Medium/Low with stakeholder input]
+- **Dependencies:** [Other requirements or external factors]
+- **Source:** [Speaker and timestamp citation]
+
+### [Requirement Category 2]
+#### [Specific Requirement]
+- **Description:** [Detailed requirement description]
+- **Technical Specifications:** [Technical details discussed]
+- **Performance Requirements:** [Speed, capacity, availability needs]
+- **Integration Points:** [Systems or processes that must connect]
+- **Source:** [Speaker and timestamp citation]
+
+## Non-Functional Requirements
+### Performance Requirements
+- [Specific performance metrics and targets discussed]
+
+### Security Requirements
+- [Security standards, compliance needs, access controls]
+
+### Scalability Requirements
+- [Growth expectations, capacity planning needs]
+
+### Usability Requirements
+- [User experience standards, accessibility needs]
+
+## Deliverables Specification
+### [Deliverable Category]
+#### [Specific Deliverable]
+- **Description:** [Complete description of deliverable content]
+- **Format/Medium:** [How deliverable will be provided]
+- **Quality Standards:** [Specific quality criteria]
+- **Acceptance Criteria:** [Client approval requirements]
+- **Dependencies:** [Prerequisites for completion]
+- **Delivery Timeline:** [Expected completion date/milestone]
+- **Review Process:** [How review and approval will work]
+- **Source:** [Meeting reference and stakeholder input]
+
+## Project Timeline & Milestones
+### Phase Structure
+- **Phase 1: [Phase Name]** ([Duration discussed])
+  - Key Activities: [Major work streams]
+  - Deliverables: [What will be completed]
+  - Success Criteria: [How phase completion is measured]
+
+### Critical Milestones
+- **[Milestone Name]** - [Date/Timeframe] - [Significance and dependencies]
+
+### Dependencies & Critical Path
+- [External dependencies that could impact timeline]
+- [Internal dependencies between project components]
+
+## Resource Requirements
+### Personnel Requirements
+- **[Role/Skill Set]** - [Duration/Commitment level] - [Specific qualifications needed]
+
+### Technology Requirements
+- **Infrastructure:** [Hardware, software, platform needs]
+- **Tools & Licenses:** [Specific tools or software licenses required]
+- **Third-Party Services:** [External services or vendor requirements]
+
+### Budget Considerations
+- [Budget ranges, cost categories, or financial constraints discussed]
+
+## Risk Assessment & Mitigation
+### Identified Risks
+#### [Risk Category]
+- **Risk:** [Specific risk description]
+- **Probability:** [Likelihood assessment from meeting discussion]
+- **Impact:** [Potential consequences]
+- **Mitigation Strategy:** [How risk will be managed]
+- **Contingency Plan:** [Backup approach if risk materializes]
+- **Owner:** [Who is responsible for monitoring this risk]
+
+## Decisions & Approvals
+### Decisions Made
+- **Decision:** [Specific decision reached]
+- **Rationale:** [Why this decision was made]
+- **Decision Maker:** [Who made the decision]
+- **Implications:** [Impact on project scope, timeline, or resources]
+- **Timestamp:** [When decision was made in meeting]
+
+### Pending Approvals
+- **Approval Needed:** [What requires approval]
+- **Decision Maker:** [Who must provide approval]
+- **Timeline:** [When approval is needed]
+- **Impact if Delayed:** [Consequences of delayed approval]
+
+## Next Steps & Action Items
+### Immediate Actions (Next 1-2 Weeks)
+- **Action:** [Specific action required]
+- **Owner:** [Responsible party]
+- **Deadline:** [Target completion date]
+- **Dependencies:** [What must happen first]
+
+### Medium-term Actions (Next Month)
+- **Action:** [Specific action required]
+- **Owner:** [Responsible party]
+- **Milestone:** [How this contributes to project progress]
+
+## Open Questions & Required Clarifications
+### Technical Clarifications Needed
+- **Question:** [Specific question requiring answer]
+- **Impact:** [How this affects project planning]
+- **Stakeholder:** [Who can provide the answer]
+- **Priority:** [Urgency of getting this answered]
+
+### Business Clarifications Needed
+- **Question:** [Specific business question]
+- **Decision Impact:** [How this affects scope or approach]
+- **Decision Maker:** [Who must provide clarity]
+
+## Assumptions for SOW Development
+### Business Assumptions
+- [Assumptions about business environment, priorities, resources]
+
+### Technical Assumptions
+- [Assumptions about technology, integrations, constraints]
+
+### Timeline Assumptions
+- [Assumptions about availability, approval processes, dependencies]
+
+## Recommendations for Formal SOW
+### Areas Requiring Additional Detail
+- [Specific areas needing more definition before SOW finalization]
+
+### Suggested Follow-up Meetings
+- [Recommended additional discussions and participants]
+
+### Risk Mitigation Recommendations
+- [Suggested approaches to minimize project risks]
+
+---
+*Document prepared from meeting transcription analysis*
+*Timestamp references format: [Speaker Name @ MM:SS]*
+                ]]>
+            </SOWDocumentationStructure>
+        </examples>
+    </reference>
+
+    <data>
+        <MeetingTranscription>
+            {{content}}
+        </MeetingTranscription>
+    </data>
+</prompt>
