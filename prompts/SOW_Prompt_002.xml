@@ -1,0 +1,136 @@
+<prompt>
+    <meta>
+        <purpose>
+            As a senior business development specialist focusing on data warehouse projects and retail industry SOW documentation, analyze the provided meeting transcriptions to create a professional Statement of Work for Grown Brilliance. Focus specifically on the small initial scope they have requested while positioning for future data warehouse opportunities. Structure the analysis to support both immediate needs and long-term relationship building in the retail jewelry industry.
+        </purpose>
+        <instructions>
+            <instruction id="1">
+                Extract only the work directly requested by Ronny Wang and the team - do not oversell or add services they haven't asked for, as they are not yet sold on a full data warehouse solution.
+            </instruction>
+            <instruction id="2">
+                Focus on the immediate pain points: data extraction from Snowflake (Clean Origin system), AWS cost analysis/cleanup, and supporting their current Power BI setup.
+            </instruction>
+            <instruction id="3">
+                Position the work as a retainer-based engagement for cash flow purposes and because late payment penalties were removed from the contract.
+            </instruction>
+            <instruction id="4">
+                Include an overview/assessment of the existing Clean Origin Snowflake system as part of the deliverables to showcase capabilities and set up future opportunities.
+            </instruction>
+            <instruction id="5">
+                Keep in mind key stakeholders: Ronny Wang (Director of Operations, reports to CEO), Chris (analytics lead), and potentially CEO Tejas Shah for review.
+            </instruction>
+            <instruction id="6">
+                Reference the $630k investment already made in the Clean Origin system and position this as protecting/leveraging existing assets.
+            </instruction>
+            <instruction id="7">
+                Acknowledge their current tech stack preferences (Power BI over Looker) and work within their constraints.
+            </instruction>
+            <instruction id="8">
+                Structure pricing and timeline for immediate deliverables while leaving door open for future data warehouse modernization discussions.
+            </instruction>
+        </instructions>
+        <context>
+            <background>
+                CDC built and managed Clean Origin's complete data reporting system on Snowflake using Fivetran, dbt, and Looker over 3-4 years for approximately $630,000. Grown Brilliance purchased Clean Origin's assets in 2024 and initially kept the system running to report on Clean Origin data separately. They have now shut down most of the system but need help extracting data and managing AWS costs while determining what to keep versus what to discontinue.
+
+                Key challenges: Grown Brilliance uses Power BI (not Looker), has limited data warehouse knowledge, no CTO/CDO/CIO (Chris handles all data), and needs to integrate Clean Origin customer data with their existing brands for unified customer experience. They removed late payment penalties from the contract, making retainer structure important for cash flow.
+
+                Current pain points: Manual data processing, difficulty accessing specific data in Snowflake, AWS cost management, need for sales history and customer data extraction for integration into their systems.
+            </background>
+            <stakeholders>
+                <primary>Ronny Wang - Director of Operations, reports directly to CEO, primary SOW decision maker</primary>
+                <secondary>Chris - Analytics lead, manages all data and Power BI reporting, new data warehouse team member "Anik" recently joined</secondary>
+                <review>CEO Tejas Shah - May review SOW, ultimate decision authority</review>
+                <operational>Bhargavi - Product Manager for Clean Origin, Dev team leads (Dhaval, others) - implementation support</operational>
+            </stakeholders>
+        </context>
+    </meta>
+
+    <analysis_framework>
+        <scope_identification>
+            <immediate_requests>
+                - Data extraction from Snowflake (sales history, customer data, payment info)
+                - AWS account review and cost optimization
+                - Support for data integration into Power BI workflows
+                - Documentation and knowledge transfer
+            </immediate_requests>
+            <implicit_needs>
+                - Assessment of Clean Origin system value/capabilities
+                - Cost-benefit analysis of maintaining vs. rebuilding
+                - Integration planning for unified customer database
+                - Technical debt evaluation (WebScaler to Nexus migration impacts)
+            </implicit_needs>
+        </scope_identification>
+
+        <deliverables_structure>
+            <phase1_immediate>
+                - Snowflake data extraction and export
+                - AWS cost analysis and cleanup recommendations
+                - System assessment and documentation
+                - Power BI integration support
+            </phase1_immediate>
+            <positioning_future>
+                - Data warehouse modernization options analysis
+                - Clean Origin system value assessment
+                - Migration planning (if desired)
+                - Ongoing consulting retainer structure
+            </positioning_future>
+        </deliverables_structure>
+
+        <pricing_approach>
+            <retainer_structure>Initial retainer payment for cash flow management</retainer_structure>
+            <scope_based>Fixed scope for initial deliverables to build trust</scope_based>
+            <hourly_option>Hourly rates for additional discovery/consulting</hourly_option>
+        </pricing_approach>
+    </analysis_framework>
+
+    <output_format>
+        Generate a comprehensive SOW analysis document that includes:
+
+        ## Executive Summary
+        - Business context and strategic opportunity
+        - Immediate scope and deliverables
+        - Investment protection (referencing $630k Clean Origin system)
+        - Retainer structure rationale
+
+        ## Project Scope Definition
+        ### Phase 1: Immediate Data Extraction and AWS Optimization
+        - Specific deliverables requested in meetings
+        - Timeline and resource requirements
+        - Dependencies and assumptions
+
+        ### Value Assessment Component
+        - Clean Origin system overview and capabilities analysis
+        - Integration opportunities with existing Grown Brilliance infrastructure
+        - Future state recommendations (without overselling)
+
+        ## Deliverables Specification
+        - Data extraction specifications (sales history, customers, payment data)
+        - AWS cost analysis and optimization plan
+        - Documentation and knowledge transfer materials
+        - Power BI integration support documentation
+
+        ## Investment and Timeline
+        - Retainer structure and payment terms
+        - Phase 1 timeline and milestones
+        - Options for additional consulting/development work
+
+        ## Risk Mitigation and Success Factors
+        - Technical risks and mitigation strategies
+        - Stakeholder alignment requirements
+        - Success metrics for Phase 1
+
+        ## Future Opportunities (Positioning Only)
+        - Data warehouse modernization potential
+        - ROI analysis framework
+        - Long-term partnership structure options
+
+        Format the output as a structured markdown document suitable for conversion to a professional SOW document matching the Aubuchon example format.
+    </output_format>
+
+    <data>
+        <meeting_transcripts>
+            {{TRANSCRIPT_CONTENT}}
+        </meeting_transcripts>
+    </data>
+</prompt>
