@@ -1,5 +1,5 @@
 # STATEMENT OF WORK #001
-**GROWN BRILLIANCE - DATA EXTRACTION AND AWS OPTIMIZATION PROJECT**
+**GROWN BRILLIANCE - DATA ASSET RECOVERY AND OPTIMIZATION ENGAGEMENT**
 
 **Client:** AJS Creations / Grown Brilliance  
 **Contact:** Ronny Wang, Director of Operations  
@@ -61,6 +61,12 @@ Date: _______________
 ### Business Context
 Grown Brilliance (AJS Creations) acquired the assets of Clean Origin in 2024, including a sophisticated data reporting system built on Snowflake that represented a $630,000 investment over 3-4 years. The system included Fivetran for data ingestion, dbt for transformations, and Looker for business intelligence, supporting daily operations and strategic decision-making.
 
+**Total Investment Context:** The $630,000 paid to CDC represents only a portion of Clean Origin's total investment. Additional significant internal resources were dedicated to requirements gathering, testing, validation, and project management. The true value of the system likely exceeds $1 million when including internal labor and opportunity costs.
+
+**Proven Business Impact:** According to Clean Origin's former CFO Jeb Beckwith, the data warehouse transformed their operations: *"We were drowning... we wouldn't have been able to do it without [CDC]."* The system enabled data-driven store openings that **doubled regional sales**, optimized marketing spend against 52,000 SKUs, and became something they *"used every single day"* for pricing and strategic decisions.
+
+**Notable System Reliability:** The Clean Origin data infrastructure operated without intervention for over 7 months (February to September 2024), only stopping when payment processing was discontinued - a testament to the robust architecture and automated design. As Jeb noted: *"Maintenance on it was really low. The usefulness of it was very good."*
+
 Following the asset acquisition, Grown Brilliance needs to:
 - Extract valuable historical data from the Clean Origin Snowflake system
 - Optimize AWS infrastructure costs while maintaining necessary services
@@ -70,8 +76,18 @@ Following the asset acquisition, Grown Brilliance needs to:
 ### Strategic Opportunity
 This engagement represents an opportunity to protect and leverage the significant investment already made in Clean Origin's data infrastructure while addressing immediate operational needs. The project will provide Grown Brilliance with both tactical data extraction services and strategic insights into their data assets.
 
+**Unique Advantage:** As the original architects and builders of the Clean Origin system, CDC possesses unmatched knowledge of the data structures, business logic, and system capabilities - eliminating the learning curve and risk associated with third-party vendors. This is particularly valuable given the complex Magento data structures that, as Jeb Beckwith noted, *"took a lot of work"* to map correctly across 52,000 SKUs with individual pricing and margin calculations.
+
+**Business Value at Risk:** The Clean Origin system contains proven business intelligence that enabled:
+- Store location decisions that doubled regional sales (using geographic heat maps showing sales by ZIP code)
+- Daily pricing optimization across tens of thousands of products
+- Marketing ROI improvements through margin-based targeting
+- Customer lifetime value tracking that reduced acquisition costs to "almost nothing"
+
 ### Retainer Structure Rationale
 Given the exploratory nature of this work and the need for flexible resource allocation, a retainer-based engagement provides optimal cash flow management and allows for responsive support as requirements are clarified during data exploration.
+
+**Time-Sensitive Note:** Snowflake data retention policies and AWS resource lifecycles may impact data availability. Prompt project initiation is recommended to ensure complete data recovery.
 
 ## PROJECT SCOPE DEFINITION
 
@@ -83,11 +99,12 @@ Given the exploratory nature of this work and the need for flexible resource all
   - Customer purchase data including products, pricing, and transaction details
   - Payment method and transaction metadata
   - Service plans and additional product details where available
+  - **Critical Business Intelligence:** Gross margin by SKU, customer attribution data, and geographic performance metrics that Clean Origin used for daily decision-making
 
 • **Customer Database Export**  
   - Complete customer records including contact information
   - Purchase history and customer lifetime value data
-  - Geographic and demographic data for marketing analysis
+  - Geographic and demographic data for marketing analysis (including ZIP code intelligence used for store placement)
   - Customer relationship mapping between payment systems
 
 • **Product and Inventory Data**
@@ -115,6 +132,7 @@ Given the exploratory nature of this work and the need for flexible resource all
   - Assessment of data transformation logic and business rules
   - Evaluation of data quality and completeness
   - Analysis of potential value for ongoing operations
+  - **Magento Complexity Documentation:** Detailed mapping of how complex Magento structures were transformed into business-friendly reporting formats
 
 • **Integration Planning Support**
   - Power BI integration recommendations and documentation
@@ -168,12 +186,19 @@ Given the exploratory nature of this work and the need for flexible resource all
   - Outreach to Brian Walker to recover valuable Jira and Confluence documentation from Clean Origin project
   - System architecture documentation (recovered and/or reconstructed)
   - Business rule and transformation logic documentation
+  - **Magento Transformation Logic:** Years of complex mapping rules that convert Magento's intricate data model into actionable business insights
   - Operational procedures and maintenance requirements
-  - Historical project documentation and implementation notes
+  - Historical project documentation and implementation notes representing thousands of hours of analysis and refinement
 
 ## ADDITIONAL SERVICES: CONSULTING AND ADVISORY
 
 Beyond the core deliverables, CDC will provide:
+
+• **Collaboration with Internal Resources**
+  - Knowledge transfer sessions with Anik to ensure internal capability building
+  - Joint assessment of data warehouse options to leverage internal expertise
+  - Documentation specifically designed for internal team utilization
+  - Positioning CDC as strategic advisor supporting internal initiatives
 
 • **Strategic Data Consulting**
   - Business requirements clarification sessions
@@ -185,6 +210,25 @@ Beyond the core deliverables, CDC will provide:
   - Data integration best practices guidance  
   - Future data warehouse planning consultation (if requested)
 
+## PROVEN RESULTS FROM CLEAN ORIGIN IMPLEMENTATION
+
+Based on testimonial from Jeb Beckwith, Former CFO of Clean Origin:
+
+### Operational Transformation
+• **Before CDC:** *"We were drowning"* with 52,000 SKUs and no visibility into margins or marketing effectiveness
+• **After CDC:** Daily pricing decisions, marketing optimization, and strategic planning based on real-time data
+
+### Measurable Business Impact
+• **100% Sales Increase:** First omnichannel store doubled regional sales
+• **Marketing ROI:** Reduced customer acquisition costs to "almost nothing" for repeat customers
+• **Daily Operations:** System became essential for daily pricing and repricing decisions
+• **Low Maintenance:** *"Maintenance on it was really low. The usefulness of it was very good"*
+• **Strategic Expansion:** Data-driven insights enabled successful expansion from online-only to 6 physical stores
+• **Location Intelligence:** Looker dashboards visualized sales by ZIP code on US maps, enabling data-driven store placement decisions that maximized ROI
+
+### Client Testimonial
+*"Cloud Data Consulting was tremendous... we wouldn't have been able to do it without you."* - Jeb Beckwith, Former CFO, Clean Origin
+
 ## INVESTMENT AND TIMELINE
 
 ### Billing Structure
@@ -193,10 +237,13 @@ Beyond the core deliverables, CDC will provide:
 - Provides immediate resource allocation flexibility
 - Covers initial data exploration and requirements refinement
 
-**Total Project Investment:** $25,000  
+**Total Project Investment:** $35,000  
 - Includes all data extraction, AWS optimization, and documentation deliverables
-- Covers up to 100 hours of senior consultant time
-- Additional consulting beyond scope available at $250/hour
+- Covers up to 140 hours at blended rate of $250/hour
+- Additional consulting beyond scope available at current rates:
+  - Principal/Data Architect: $275/hour
+  - Senior Data Engineers: $200/hour
+  - Blended project rate: $250/hour
 
 ### Timeline and Milestones
 
@@ -221,8 +268,8 @@ Beyond the core deliverables, CDC will provide:
 
 ### Payment Schedule
 - **Initial Retainer:** $15,000 upon SOW execution
-- **Milestone 1:** $5,000 upon completion of data extraction (Week 3)
-- **Final Payment:** $5,000 upon project completion and delivery (Week 6)
+- **Milestone 1:** $10,000 upon completion of data extraction (Week 3)
+- **Final Payment:** $10,000 upon project completion and delivery (Week 6)
 
 ## ASSUMPTIONS AND REQUIREMENTS
 
@@ -272,11 +319,19 @@ While this engagement focuses on immediate tactical needs, the project will prov
 • Incremental data infrastructure development and optimization
 • Strategic data initiatives supporting business growth and operational efficiency
 
+### Future Engagement Options
+• **2024 Market Rate Lock-In:** Client may secure current 2024 professional services rates for future projects initiated within 12 months:
+  - Principal/Data Architect: $275/hour (market rate: $300-350)
+  - Senior Data Engineers: $200/hour (market rate: $225-275)
+  - Represents 15-20% discount from projected 2025 market rates
+• **Retainer Option:** Monthly retainer arrangements available starting at $10,000/month for ongoing support and development
+
 ### Investment Protection Strategy
-• Maximizing value from the $630,000 Clean Origin system investment
+• Maximizing value from the $1+ million total Clean Origin system investment (including internal resources)
+• Preserving years of Magento data mapping expertise that would be costly and time-consuming to recreate
 • Integration planning for unified customer experience across all AJS Creations brands
 • Technology roadmap development for scalable data operations
 
 ---
 
-*This Statement of Work protects your existing data investments while addressing immediate operational needs. The engagement is designed to demonstrate CDC's capabilities and provide a foundation for strategic data discussions based on concrete results and proven value delivery.*
+*This Statement of Work protects your existing data investments while addressing immediate operational needs. As Clean Origin discovered, the right data infrastructure can transform a business - doubling sales, optimizing margins across 52,000 SKUs, and enabling strategic decisions that drive growth. This engagement ensures you capture the full value of the proven system you've acquired.*
